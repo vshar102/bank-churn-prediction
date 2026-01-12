@@ -16,19 +16,19 @@ Segments customers into meaningful personas to guide marketing and retention dec
 The solution had to be interpretable, business-ready, and suitable for real decision-making, not just model accuracy.
 
 # Action (Technical & Analytical Approach)
-🔹 Data Preparation & Quality
+🔹 Data Preparation & Quality:
 Cleaned and standardized raw bank data (10,000 customers, 13+ features)
 Resolved inconsistent categorical values (e.g., Geography labels)
 Removed identifiers and handled missing values
 Applied One-Hot Encoding for categorical variables
 Standardized numerical features (Age, Balance, Salary) to prevent scale bias
 
-🔹 Handling Class Imbalance
+🔹 Handling Class Imbalance:
 Churn represented only ~20% of customers
 Applied SMOTE (Synthetic Minority Over-sampling Technique) to ensure the model learned churn behavior instead of defaulting to “non-churn”
 Focused on recall over raw accuracy, aligning with real retention goals
 
-🔹 Churn Prediction (Supervised Learning)
+🔹 Churn Prediction (Supervised Learning):
 Trained an XGBoost classifier, chosen for:
 Strong performance on tabular data
 Built-in handling of feature interactions
@@ -38,7 +38,7 @@ Age
 Number of Products
 Balance-related features
 
-🔹 Customer Segmentation (Unsupervised Learning)
+🔹 Customer Segmentation (Unsupervised Learning):
 Performed K-Means clustering on standardized behavioral and financial features
 Determined optimal number of clusters using the Elbow Method
 Identified distinct customer personas, including:
