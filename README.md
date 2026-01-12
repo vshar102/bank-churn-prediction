@@ -22,10 +22,12 @@ Resolved inconsistent categorical values (e.g., Geography labels)
 Removed identifiers and handled missing values
 Applied One-Hot Encoding for categorical variables
 Standardized numerical features (Age, Balance, Salary) to prevent scale bias
+
 🔹 Handling Class Imbalance
 Churn represented only ~20% of customers
 Applied SMOTE (Synthetic Minority Over-sampling Technique) to ensure the model learned churn behavior instead of defaulting to “non-churn”
 Focused on recall over raw accuracy, aligning with real retention goals
+
 🔹 Churn Prediction (Supervised Learning)
 Trained an XGBoost classifier, chosen for:
 Strong performance on tabular data
@@ -35,6 +37,7 @@ Identified key churn drivers such as:
 Age
 Number of Products
 Balance-related features
+
 🔹 Customer Segmentation (Unsupervised Learning)
 Performed K-Means clustering on standardized behavioral and financial features
 Determined optimal number of clusters using the Elbow Method
